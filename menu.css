@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+   /*  width: 100%;
+    height: 100vh;
+    background-image: url(high-angle-fried-chicken-fries-with-ketchup.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; */
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(213,231,225,0.9989495798319328) 48%);
+}
+h1{
+    text-align: center;
+    color: blue;
+    padding: 20px;
+}
+nav{
+    background-color:rgba(0,0, 0, 0.5);
+    display: grid;
+    place-items: center;  
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    transition: 0.2s ease-in;
+}
+nav ul a:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img{
+    width: 100% ;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.O4);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color:rgba(0,0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+h4{
+color: antiquewhite;
+}
+
+@media screen and (max-width: 1280px) {
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+@media screen and (max-width: 820px) {
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+@media screen and (max-width: 420px) {
+    .items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    } 
+}
+
